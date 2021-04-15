@@ -1,0 +1,77 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+
+msgctxt "Addons::name::ee_changes_rgw"
+msgid "ee_changes_rgw_name"
+msgstr "[efimchenko.ru] Изменения на сайте"
+
+msgctxt "Addons::description::ee_changes_rgw"
+msgid "ee_changes_rgw_description"
+msgstr "Все изменения прописаны в основной папке модуля в файле README"
+
+msgctxt "SettingsSections::ee_changes_rgw::general"
+msgid "ee_changes_rgw_general"
+msgstr "Бейдж карточки товара"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_text_badge"
+msgid "ee_changes_rgw_text_badge"
+msgstr "Текст на значке\\блоке"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_back_color"
+msgid "ee_changes_rgw_badge_back_color"
+msgstr "Цвет фона значка\\блока"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_color"
+msgid "ee_changes_rgw_badge_color"
+msgstr "Цвет текста на значке\\блоке"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_style"
+msgid "ee_changes_rgw_badge_style"
+msgstr "Стиль значка\\блока"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_title"
+msgid "ee_changes_rgw_badge_title"
+msgstr "Подсказка(title) для значка/блока"
+
+msgctxt "SettingsTooltips::ee_changes_rgw::ee_changes_rgw_badge_title"
+msgid "ee_changes_rgw_badge_title_tooltips"
+msgstr "Окно для ввода html всплывающей подсказке (Пример: Данную модель вы можете посмотреть в нашем шоуруме по адресу Москва, Щербинка, Симферопольское шоссе, 11 Телефон 8-800-505-62-98)"
+
+msgctxt "SettingsSections::ee_changes_rgw::additional1"
+msgid "ee_changes_rgw_additional1"
+msgstr "Блок мотивации"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_motivation_block_active"
+msgid "ee_changes_rgw_motivation_block_active"
+msgstr "Использовать блок мотивации"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_motivation_item_id"
+msgid "ee_changes_rgw_motivation_item_id"
+msgstr "ID блока мотивации"
+
+msgctxt "SettingsTooltips::ee_changes_rgw::ee_changes_rgw_motivation_item_id"
+msgid "ee_changes_rgw_motivation_item_id_tooltips"
+msgstr "Необходимо создать и настроить, в управлении данных модуля АВ: Блок мотивации, новый блок и скопировать в это поле его motivation_item_id Находится в адресной строке, при его настройке, после сохранения."
+
+msgctxt "SettingsSections::ee_changes_rgw::additional2"
+msgid "ee_changes_rgw_additional2"
+msgstr "Предзаказ"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_text"
+msgid "ee_changes_rgw_badge_text"
+msgstr "Текст для группы «Оптовый сегмент»"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_text_title"
+msgid "ee_changes_rgw_badge_text_title"
+msgstr "Подсказка для группы «Оптовый сегмент»"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_other_text"
+msgid "ee_changes_rgw_badge_other_text"
+msgstr "Текст для других групп"
+
+msgctxt "SettingsOptions::ee_changes_rgw::ee_changes_rgw_badge_other_text_title"
+msgid "ee_changes_rgw_badge_other_text_title"
+msgstr "Подсказка для других групп"

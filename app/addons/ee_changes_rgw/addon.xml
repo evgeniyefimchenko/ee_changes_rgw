@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>ee_changes_rgw</id>
+    <version>1.0.8</version>
+    <status>active</status>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <default_language>ru</default_language>
+	<compatibility>
+		<dependencies>ab__motivation_block</dependencies>
+	</compatibility>
+    <has_icon>Y</has_icon>
+    <supplier>Евгений Ефимченко</supplier>
+    <supplier_link>https://efimchenko.ru</supplier_link>
+
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="ee_changes_rgw_text_badge">                      
+                        <type>input</type>
+						<default_value>Шоурум</default_value>
+                    </item>
+                    <item id="ee_changes_rgw_badge_back_color">                      
+                        <type>input</type>
+						<default_value>#cccccc</default_value>
+                    </item>
+                    <item id="ee_changes_rgw_badge_style">                      
+                        <type>input</type>
+						<default_value>ab_dotd_product_label</default_value>
+                    </item>
+                    <item id="ee_changes_rgw_badge_color">                      
+                        <type>input</type>
+						<default_value>#ffffff</default_value>
+                    </item>
+                    <item id="ee_changes_rgw_badge_title">                      
+                        <type>textarea</type>
+						<default_value>Title</default_value>
+                    </item>
+                    <item id="ee_changes_rgw_info">                      
+					   <type>info</type>
+					   <handler>fn_ee_changes_rgw_get_information</handler>
+                    </item>
+                </items>
+            </section>
+            <section id="additional1">
+                <items>
+                    <item id="ee_changes_rgw_motivation_block_active">                      
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>                
+                    <item id="ee_changes_rgw_motivation_item_id">                      
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+            <section id="additional2">
+                <items>               
+                    <item id="ee_changes_rgw_badge_text">                      
+                        <type>input</type>
+                    </item>
+                    <item id="ee_changes_rgw_badge_text_title">                      
+                        <type>input</type>
+                    </item>                    
+                    <item id="ee_changes_rgw_badge_other_text">                      
+                        <type>input</type>
+                    </item>
+                    <item id="ee_changes_rgw_badge_other_text_title">                      
+                        <type>input</type>
+                    </item>                     
+                </items>
+            </section>            			
+        </sections>
+    </settings>
+	<queries>
+		<item>
+			SET sql_notes = 0;
+		</item>		
+		<item>
+			DROP TABLE IF EXISTS ?:ee_options_not
+		</item>
+		<item>
+			CREATE TABLE IF NOT EXISTS ?:ee_options (
+			 `id_option` INT NOT NULL AUTO_INCREMENT,
+			 `ee_ab_motivation_description` TEXT NOT NULL DEFAULT '',
+			 `product_id` INT NOT NULL DEFAULT 0,
+			 `ee_variation_group_code` VARCHAR(50) NOT NULL DEFAULT '',
+			 `ee_parent_group` TINYINT(2) NOT NULL DEFAULT 0,
+			 `ee_target_param_product` TINYINT(2) NOT NULL DEFAULT 1,
+			 `ee_target_param_badge` TINYINT(2) NOT NULL DEFAULT 0,
+			 `ee_target_param_badge_whom` TINYINT(2) NOT NULL DEFAULT 0,
+			 PRIMARY KEY (`id_option`), UNIQUE `product_id` (`product_id`)) ENGINE = MyISAM DEFAULT CHARSET UTF8;
+		</item>
+		<item>
+			SET sql_notes = 1;
+		</item>		
+	</queries>
+    <functions>
+        <item for="install">fn_ee_changes_rgw_install</item>
+        <item for="uninstall">fn_ee_changes_rgw_uninstall</item>
+    </functions>	
+</addon>
