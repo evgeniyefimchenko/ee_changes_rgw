@@ -6,6 +6,10 @@ use Tygh\Registry;
 global $ee_changes_rgw;
 $ee_changes_rgw = Registry::get('addons.ee_changes_rgw');
 
+function fn_ee_changes_rgw_data_feeds_export($datafeed_id, $options, $pattern, $fields, $datafeed_data) {
+	//fn_print_die($datafeed_id, $options, $pattern, $fields, $datafeed_data);
+}
+
 function fn_set_ee_options($product_data) {
 	$variation_code = db_get_row('SELECT pvg.code as var_code, pvgp.group_id as id_group FROM ?:product_variation_groups as pvg, ?:product_variation_group_products as pvgp WHERE pvgp.product_id = ?i AND pvgp.group_id = pvg.id', $product_data['product_id']);
 	$ee_variation_group_code = $variation_code['var_code'] ? $variation_code['var_code'] : '';		

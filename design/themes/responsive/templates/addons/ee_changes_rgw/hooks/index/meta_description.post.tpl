@@ -1,0 +1,1 @@
+<meta name="publisher-name" content="efimchenko.ru" />
